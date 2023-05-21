@@ -1,0 +1,114 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">	
+    <title>Награды</title>
+    </head>
+ <body bgcolor="salmon">
+    <style>
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            background-color: bisque;
+            font-family: 'Times New Roman', Times, serif;
+            max-width: 1920px;
+            max-height:1300px;
+            color:bisque;
+            justify-content:left;
+            align-content: space-between;
+        }
+
+        .box2,div {
+            display: flex;
+            flex-direction: row;
+            font-size: 21px;
+            padding-right: 10px;
+            max-width: 1920px;
+            max-height:1300px;
+            margin-top:10px;
+            padding-top:1px;
+            color:sienna;
+            text-align:justify;
+            align-content:space-around;
+            }        
+        img{
+
+            padding-left:15px ;
+        }
+        ul{
+            color: white;
+        }
+    </style>
+     <div class="container">
+         <div class="box">
+            <center><h2 style="margin-top: 6px;">Награды</h2></center>
+         </div>
+     </div>
+     <div class="container2">
+        <div class="box2">
+            <img src="Lenin.png" class="drag" title="Юбилейная медаль «За доблестный труд (За воинскую доблесть). В ознаменование 100-летия со дня рождения Владимира Ильича Ленина»" width="300px" height="500px">
+            <img src="Lenin1.png"  class="drag" title="Орден Ленина»"width="250px",height="220px">
+            <img src="Medal.png" class="drag" title="Медаль «За доблестный труд в Великой Отечественной войне 1941—1945 гг.»" width="250px",height='220px'>
+            <img src="Order.png" class="drag" title="Орден Октябрьской Революции" width="250px" height="500px">
+            <img src="Pueblos.png"class="drag" title="Орден Дружбы народов" width="250px" height="500px">
+            <img src="Red.png" class="drag"title="Орден Трудового Красного Знамени" width="250px" height="500px">
+        </div>
+    </div>
+    <ul type="square">
+        <li><h2>Юбилейная медаль «За доблестный труд (За воинскую доблесть). В ознаменование 100-летия со дня рождения Владимира Ильича Ленина</h2></li>
+        <li><h2>Орден Ленина</h2></li>
+        <li><h2>Медаль «За доблестный труд в Великой Отечественной войне 1941—1945 гг.</h2></li>
+        <li><h2>Орден Октябрьской Революции</h2></li>
+        <li><h2>Орден Дружбы народов</h2></li>
+        <li><h2>Орден Трудового Красного Знамени</h2></li>
+    </ul>
+    <footer>
+        <button style="background-color: wheat;border-color: sienna; color: sienna; text-decoration: none;"width="20px"><a href="MM.html">Назад</button>
+    </footer>
+    <style>
+        <!--
+        .drag{position:relative;cursor:move}
+        -->
+    </style>
+    <script language="JavaScript1.2">
+    <!--
+
+    /*
+    Drag and Drop Script- 
+    © Dynamic Drive (www.dynamicdrive.com)
+    For full source code, installation instructions,
+    100's more DHTML scripts, and Terms Of
+    Use, visit dynamicdrive.com
+    */
+
+    var dragapproved=false
+    var z,x,y
+    function move(){
+    if (event.button==1&&dragapproved){
+    z.style.pixelLeft= temp1+event.clientX-x
+    z.style.pixelTop= temp2+event.clientY-y
+    return false
+    }
+    }
+    function drags(){
+    if (!document.all)
+    return
+    if (event.srcElement.className=="drag"){
+    dragapproved=true
+    z=event.srcElement
+    temp1=z.style.pixelLeft
+    temp2=z.style.pixelTop
+    x=event.clientX
+    y=event.clientY
+    document.onmousemove=move
+    }
+    }
+    document.onmousedown=drags
+    document.onmouseup=new Function("dragapproved=false")
+    //-->
+</script>
+
+ </body>
+</html>

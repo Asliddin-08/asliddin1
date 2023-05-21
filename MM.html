@@ -1,0 +1,161 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">	
+    <title> Таджикская литература на примере писателя Мирсаида Миршакара</title>
+
+    </head>
+ <body bgcolor="salmon"  onLoad="startNeon()">
+     <div class="container">
+         <div class="box">
+             <div><button style="background-color: wheat;border-color: sienna; color: sienna;"><a href="MM1.html">Биография</a></button></div>
+             <div><button style="background-color: wheat;border-color: sienna;color: sienna;"><a href="MM2.html">Произведения</a></button></div>
+             <div><button style="background-color: wheat;border-color: sienna;color: sienna;"><a href="MM3.html">Награды</a></button></div>
+             <div><button style="background-color: wheat;border-color: sienna;color: sienna;"><a href="MM4.html">Фильмография</a></button></div>
+             <div><button style="background-color: wheat;border-color: sienna;color: sienna;"><a href="MM5.html">Галерея</a></button></div>
+             <div><button style="background-color: wheat;border-color: sienna;color: sienna;"><a href="MM6.html">О сайте</a></button></div>
+         </div>
+     </div>
+     <div class="container1">
+         <div class="box1">
+             <div><img src="Mirsakar.png"></div>
+             
+             <div>
+                <center><h2>Жизнь и творчество Мирсаида Миршакара</h2></center>
+                    <br/>
+                <p>&nbsp;&nbsp;&nbsp;Мирсаид Миршакар (Миршакаров; 1912 — 1993) — советский таджикский поэт, один из зачинателей таджикской детской литературы, писатель, драматург, редактор, сценарист, общественный и государственный деятель. Председатель ВС Таджикской ССР (1961—1975), ответственный секретарь правления Союза писателей Таджикской ССР (1940—1943; 1946—1959), член правления СП СССР, член ЦК КП Таджикистана и Союза кинематографистов СССР с 1963, председатель Комитета по присуждению Государственных премий Таджикской ССР имени А. Рудаки с 1978, лауреат Сталинской премии (1950), Народный поэт Таджикской ССР (1962), Председатель Таджикского комитета солидарности стран Азии и Африки </p>
+                </div>
+         </div>
+         <br/>
+         <hr>
+         <div class="one">
+            <center>
+                <h2><span id="neon">ЛЮДИ С КРЫШИ МИРА</span></h2>
+            </center> 
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Прохладой горной дышит грудь,<br/>
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Блаженный полумрак…<br/>
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;– Откуда, всадник, держишь путь?<br/>
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;– Из города в кишлак, –<br/>
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Как изумруд и сердолик,<br/>
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Глаза коня горят!..<br/>
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;– Меня на копи, на рудник<br/>
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Послал Сталинабад,<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;(Мирсаид М.)</div>
+     </div>
+     <SCRIPT LANGUAGE="JavaScript">
+<!-- Original: hallo503@hotmail.com -->
+<!-- Web Site: http://www.bestjavascripts.com -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+neonBaseColor = "#C0C0C0";
+neonColor = "sienna";
+num = 0;
+num2 = 0;
+num3 = 0;
+num4 = neonColor;
+function startNeon() {
+message = neon.innerText;
+neon.innerText = "";
+for(i = 0; i != message.length; i++) {
+neon.innerHTML += "<span id=\"neond\" style=\"color:"+neonBaseColor+"\"> "+message.charAt(i)+"<\/span>"};
+neon2();
+}
+function neon2() {
+if(num != message.length) {
+document.all.neond[num].style.color = neonColor;
+num++;
+setTimeout("neon2()", 100);
+}
+else {
+num = 0;
+num2 = message.length;
+setTimeout("neon4onev()", 2000);
+}
+}
+function neon4onev() {
+document.all.neond[num].style.color = neonBaseColor;
+document.all.neond[num2-1].style.color = neonBaseColor;
+if(Math.floor(message.length / 2) + 1 != num2) {
+num++;
+num2--;
+setTimeout("neon4onev()", 50);
+}
+else {
+setTimeout("neon5()", 50);
+}
+}
+function neon5() {
+if(num3 != message.length && num3 != message.length+1) {
+document.all.neond[num3].style.color = neonColor;
+num3 = num3 + 2;
+setTimeout("neon5()",100);
+}
+else {
+setTimeout("neon52()", 50);
+}
+}
+function neon52() {
+if(num3 == message.length) {
+num3++;
+neon52a();
+}
+else {
+num3--;
+neon52a();
+}
+}
+function neon52a() {
+if(num3 != 1) {
+num3 = num3 - 2;
+document.all.neond[num3].style.color = neonColor;
+setTimeout("neon52a()", 100);
+}
+else {
+if(num4 == neonColor) {
+num3 = 0;
+neonColor = neonBaseColor;
+setTimeout("neon5()", 2000);
+}
+else {
+neonColor = num4;
+num3 = 0;
+setTimeout("neon4onev2()", 50);
+}
+}
+}
+function neon4onev2() {
+document.all.neond[num].style.color = neonColor;
+document.all.neond[num2 - 1].style.color = neonColor;
+if(message.length != num2) {
+num--;
+num2++;
+setTimeout("neon4onev2()", 50);
+}
+else {
+num = 0;
+num2 = 0;
+setTimeout("neon3()", 2000);
+}
+}
+function neon3() {
+if(num != message.length) {
+document.all.neond[num].style.color = neonBaseColor;
+num++;
+setTimeout("neon3()", 100);
+}
+else {
+num = 0;
+neon2();
+}
+}
+// End -->
+</script>
+
+
+ </body>
+</html>
